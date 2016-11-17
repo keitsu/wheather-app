@@ -1,12 +1,12 @@
 <ion-view>
-  <ion-content overflow-scroll="false">
-    <div>
+<ion-content overflow-scroll="false" class="weather-home">
+  <div>
       <label class="item-input">
         <span class="input-label city">Ville :</span>
         <input type="text" placeholder="Paris,fr" ng-model="search">
       </label>
-
-<input type="text" placeholder="Paris,fr" ng-model="search" ng-keypress="loadWeather(search, $event)">    </div>
+<input type="text" placeholder="Paris,fr" ng-model="search" ng-keypress="loadWeather(search, $event)">
+</div>
     <div ng-if="state">
         <img src="{{weatherData.icon}}"/>
         <label>{{weatherData.main}}</label>
